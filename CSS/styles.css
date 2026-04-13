@@ -18,11 +18,17 @@ body{
 }
 
 header, footer{
-		width: 100%;
-		background-color: gray;
+	min-height: 10%;	
+	width: 100%;
+	background-color: gray;
 }
 main{
 	flex: 1; /*Extends the content to fit the size of the screen if the content is too little*/
+}
+nav{
+	display: flex;
+	justify-content: horizontal;
+	height: auto;
 }
 
 .main-container{
@@ -66,4 +72,12 @@ main{
 	height: 100%;
 	object-fit: cover;
 	padding: .5%;
+}
+
+.game-programming-link{
+	margin-right: auto;
+	max-height: 100%;
+}
+.archive-links{
+	
 }
