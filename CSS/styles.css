@@ -15,13 +15,18 @@ body{
 	background-color: lightgray;
 	display: flex; /*Structures the content to fit in a flexbox*/
 	flex-direction: column; /*Structures the flexbox's content vertically*/
+	
+	/*Color*/
+	background-color: #303030;
 }
 
 header, footer{
 	min-height: 10%;	
 	width: 100%;
-	background-color: gray;
+	background-color: #00502f;
+	text-color: white;
 }
+
 main{
 	flex: 1; /*Extends the content to fit the size of the screen if the content is too little*/
 }
@@ -37,13 +42,17 @@ nav{
 	width: 95%;
 	max-width: 2500px;
 	margin: 0 auto;
+	gap: 2%;
 }
 .intro-card{
-	background-color: white;
+	background-color: #00502f;
+	color: white;
 	font-size: clamp(18px, 3vh, 32px);
+	padding: 1%;
+	margin-left: 3%;
+	margin-right: 3%;
 }
 .project-highlights{
-	padding-top: 2%;
 	padding-bottom: 40%; /*increase this as necessary to make the footer fit below this element*/
 	/*Sort the elements in a grid-like structure*/
 	display: grid;
@@ -55,10 +64,12 @@ nav{
 	/*The card needs to display the text and image in a flex colum*/
 	display: flex;
 	flex-direction: column;
-	background-color: white;
+	background-color: #00502f;
 	padding: 1%;
 	height: 80%;
 	aspect-ratio: 3 / 4;
+	gap: 1%;
+	border-radius: 3%;
 }
 .project-highlight-card:nth-child(even){ /*enforces this style on every other card using project-highlight-card style*/
 	transform: translateY(50%); /*If the card is an even number, then it gets pushed down along the grid, creating a zig-zag pattern across the grid*/
@@ -73,6 +84,7 @@ nav{
 	height: 100%;
 	object-fit: cover;
 	padding: .5%;
+	border-radius: 3%;
 }
 
 .game-programming-link{
@@ -88,4 +100,18 @@ nav{
 
 .archive-links{
 	padding-right: 5%;
+	color: white;
+}
+
+a:link{
+	color: white;
+}
+a:visited{
+	color: white;
+}
+a:hover{
+	color: lightgray;
+}
+a:active{
+	color: white;
 }
