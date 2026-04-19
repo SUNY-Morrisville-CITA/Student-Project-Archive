@@ -28,7 +28,8 @@ main{
 nav{
 	display: flex;
 	justify-content: horizontal;
-	height: auto;
+	align-items: center;
+	height: 100%;
 }
 
 .main-container{
@@ -76,8 +77,15 @@ nav{
 
 .game-programming-link{
 	margin-right: auto;
-	max-height: 100%;
+	padding-left: 5%;
 }
+
+.game-programming-link img {
+    max-width: 80%;
+    height: auto;
+    display: block;
+}
+
 .archive-links{
-	
+	padding-right: 5%;
 }
